@@ -1,0 +1,15 @@
+ul a {
+	text-decoration: none;
+}
+
+ul a:hover {
+	opacity: 1;
+}
+
+footer li {
+	list-style: none;
+	line-height: 1;
+	margin-right: 10rem;
+	padding: 0;
+	display: inline;
+}

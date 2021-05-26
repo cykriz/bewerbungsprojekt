@@ -1,0 +1,5 @@
+Bewertungen
+Egal ob Google, ausgezeichnet.org oder trustpilot.com: Bewertungen sind im Trend.
+Sehr viele Unternehmen legen Wert darauf, von Ihren Kunden bewertet zu werden. Diese Bewertungen müssen dann auch auf der Website eingebunden werden.
+
+Dies ist ein Bespiel dafür, wie man Bewertungen mit JavaScript programmieren kann. Mit den Pfeilen kann man vor, bzw. zurück navigieren. Mit der Schaltfläche in der Mitte wird eine zufällige Bewertung angezeigt.

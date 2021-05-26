@@ -1,0 +1,14 @@
+#site > h3 {
+	column-span: all;
+	margin-top: 1.5rem;
+}
+
+div#about {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div#site {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}

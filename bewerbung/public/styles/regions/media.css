@@ -1,0 +1,55 @@
+@media screen and (max-width: 900px) {
+	div.wrapper.columns {
+		column-count: 2;
+		/* column-gap: 4rem; */
+	}
+}
+
+@media screen and (max-width: 756px) {
+	#header h1 {
+		font-size: 3.5rem;
+	}
+
+	#header::before {
+		height: 120%;
+	}
+
+	.wrapper div:first-of-type {
+		margin-right: 0;
+	}
+
+	section#chat-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.chat-windows {
+		display: block;
+	}
+
+	#chat-section iframe {
+		width: 100%;
+	}
+
+	div.die {
+		margin: 0;
+	}
+
+	section div.wrapper {
+		flex-direction: column;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	section div.wrapper div {
+		margin-bottom: 2rem;
+		margin-right: 0;
+	}
+
+	section div.wrapper div:last-of-type {
+		margin-bottom: 0;
+	}
+	div.wrapper.columns {
+		column-count: 1;
+	}
+}

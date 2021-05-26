@@ -1,0 +1,53 @@
+.columns {
+	display: block !important;
+}
+
+div.wrapper {
+	column-count: 3;
+	column-gap: 4rem;
+}
+
+div.wrapper.columns h2 {
+	column-span: all;
+}
+
+#boxes .wrapper div:first-of-type {
+	margin-right: initial;
+}
+
+div.wrapper.columns p {
+	margin-top: 0;
+	/* text-align: justify; */
+	hyphens: auto;
+}
+
+.wrapper div:first-of-type {
+	margin-right: 5rem;
+}
+
+.wrapper div:last-of-type {
+	margin-right: 0;
+}
+
+.wrapper.column div:first-of-type {
+	margin-right: 0;
+}
+
+div.flex {
+	flex: 1 1 100%;
+	/* margin-right: 1rem; */
+}
+
+div.wd30 {
+	flex: 0 0 30%;
+	/* margin-right: 1rem; */
+}
+
+div.wd50 {
+	flex: 0 0 50%;
+	margin-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-right: 1rem; */
+}

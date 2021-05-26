@@ -1,0 +1,62 @@
+body.overflow-hidden {
+	overflow: hidden;
+}
+
+#backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 10;
+	pointer-events: none;
+	display: none;
+}
+
+#backdrop.visible {
+	display: block;
+	pointer-events: all;
+}
+
+div#impressum,
+div#datenschutz,
+div#blog,
+div#corona {
+	display: none;
+	position: fixed;
+	width: 90vw;
+	height: 90vh;
+	z-index: 15;
+	top: 5vh;
+	left: 5vw;
+	box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+	background: var(--primary);
+	padding: 0;
+	overflow: auto;
+	border-radius: var(--radius);
+}
+
+#impressum.visible,
+#datenschutz.visible,
+#blog.visible,
+#corona.visible {
+	display: flex;
+	flex-direction: column;
+}
+
+#blog.visible iframe,
+#corona.visible iframe {
+	flex: 0 1 100%;
+}
+
+.back-content {
+	overflow: auto;
+	padding: 2rem;
+}
+
+button.close-backdrop {
+	flex: 0 0 5%;
+	margin: 0;
+	border-radius: 0 0 1rem 1rem;
+}

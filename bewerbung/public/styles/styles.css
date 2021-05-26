@@ -1,0 +1,87 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css';
+@import 'divs.css';
+@import 'text.css';
+@import 'regions/header.css';
+@import 'regions/mainText.css';
+@import 'regions/sections.css';
+@import 'regions/die.css';
+@import 'regions/reviews.css';
+@import 'regions/tabs.css';
+@import 'regions/lorem.css';
+@import 'regions/menu.css';
+@import 'regions/backdrop.css';
+@import 'regions/outer-chat.css';
+@import 'regions/media.css';
+@import 'regions/footer.css';
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	--primary: #1f1f1f;
+	--light: #333;
+	--textcolor: #fffb;
+	--myred: rgba(254, 47, 94, 255);
+	--radius: 3rem;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'regions/Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'regions/Open Sans', 'regions/Helvetica Neue',
+		sans-serif;
+	font-size: 1.7rem;
+	color: var(--textcolor);
+	background-color: var(--primary);
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+a {
+	display: inline;
+	list-style: none;
+	line-height: 4;
+	color: var(--textcolor);
+	opacity: 0.7;
+}
+
+.hide {
+	display: none !important;
+}
+
+button,
+input {
+	background: var(--myred);
+	border: none;
+	padding: 1rem;
+	color: var(--textcolor);
+	border-radius: 1rem;
+	margin: 0.5rem 1rem;
+}
+
+button:hover {
+	/* background: var(--light); */
+	color: #fff;
+	cursor: pointer;
+}
+
+span.line {
+	height: 0.2rem;
+	background: var(--myred);
+	width: 40%;
+	margin: 1rem auto;
+	display: block;
+}
+
+div.column {
+	flex-direction: column !important;
+}
+
+iframe {
+	border: 0;
+}

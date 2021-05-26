@@ -1,0 +1,8 @@
+div.lorem-text {
+	color: #fff;
+}
+
+input#amount {
+	max-width: 7rem;
+	background: var(--light);
+}

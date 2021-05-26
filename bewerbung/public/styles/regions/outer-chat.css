@@ -1,0 +1,13 @@
+div.chat-windows {
+	display: flex;
+}
+#chat-section iframe {
+	flex: 1 1 100%;
+	height: 50vh;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	margin-bottom: 1rem;
+	border: 0;
+	background: transparent;
+}

@@ -1,0 +1,16 @@
+h1,
+h2,
+h3 {
+	margin: 1rem 0;
+	padding: 1rem 0;
+	font-size: 2em;
+}
+
+p {
+	letter-spacing: 0.2px;
+	line-height: 1.5;
+}
+
+.text-center {
+	text-align: center;
+}

@@ -1,0 +1,116 @@
+#chat-intern {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+div#chat {
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#chat-box,
+#name-box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+#chat-box {
+	align-items: stretch;
+}
+
+#name-box div#enter-name input,
+#name-box div#enter-name p {
+	margin: 0.5rem 0;
+}
+
+#chat-box div.control {
+	display: flex;
+	flex-direction: row;
+}
+
+#chat-output {
+	flex: 1 1 100%;
+	overflow: auto;
+	padding: 2rem 1rem;
+}
+
+input {
+	background: var(--light) !important;
+}
+
+#chat-box div.control input {
+	flex: 0 1 100%;
+}
+
+#chat-box button {
+	flex: 0 0 10%;
+}
+
+#chat-output p.message,
+#chat-output p.handle {
+	border-radius: 0.5rem;
+	margin: 0 1rem;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	background: var(--light);
+	word-wrap: break-word;
+}
+
+#chat-output .right {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	float: right;
+	clear: both;
+	max-width: 60%;
+	margin-right: 0;
+}
+
+#chat-output .left {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	clear: both;
+	max-width: 60%;
+}
+
+div.right p {
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+#chat-output div.right p.message {
+	background: #00fa;
+}
+
+#chat-output p.handle {
+	border: 0;
+	background: none;
+	font-size: 0.6em;
+	font-style: italic;
+	display: inline-block;
+	padding: 1rem 0 0.4rem 0;
+}
+
+#chat-output p.handle::after {
+	content: ' sagt';
+}
+
+#feedback {
+	font-size: 0.7em;
+	margin: 1rem;
+	font-style: italic;
+}
+
+#feedback::after {
+	content: ' schreibt...';
+}

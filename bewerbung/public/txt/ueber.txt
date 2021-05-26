@@ -1,0 +1,10 @@
+Corona, Web-Entwicklung und ich
+Auch wenn laut den Behörden die Corona-Krise aktuell abschwächt, setzen viele Unternehmen weiterhin verstärkt auf Homeoffice. Einige haben sich vorgenommen, die Unternehmenskultur zu Gunsten des Homeoffices nachhaltig zu verändern.
+
+Zeitgleich wird die Digitalisierung angetrieben und das standortunabhängige Arbeiten erfordert eine ständige Weiterentwicklung von Cloud- und Internetdiensten. Als Resultat sind gute Webentwickler gefragter als je zuvor.
+
+Schon in meiner frühen Jugend beschäftigte ich mich regelmäßig mit HTML, CSS und JavaScript. Nachdem ich einige Jahre bei Digital Recovery Datenrettung als IT-Techniker in der Datenwiederherstellung gearbeitet habe, strebe ich seit letztem Jahr danach, die Entwicklung von Web-Anwendungen hauptberuflich auszuüben. Aktuell mache ich bei "CBW College Berufliche Weiterbildung" eine Umschulung als Fachinformatiker im Bereich der Anwendungsentwicklung. Mein Schwerpunkt liegt im Web-Development.
+
+Im Rahmen meiner Ausbildung habe ich von Microsoft bereits folgendes Zertifikat erhalten: 
+<ul><li>Exam 98-375: HTML5 Application Development Fundamentals</li></ul>
+Noch in diesem Jahr werde ich außerdem noch folgende Zertifikate erhalten:<ul><li>Zend PHP-Zertifizierung</li><li>Java OCA-Zertifizierung 1Z0-808</li></ul>

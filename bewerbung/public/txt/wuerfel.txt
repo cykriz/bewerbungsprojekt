@@ -1,0 +1,4 @@
+Der Würfel
+Wer kennt es nicht: Man sitzt mit Freunden oder der Familie zusammen und möchte ein Spiel spielen. Doch der Würfel ist verschollen. Abhilfe könnte ein eigen programmierter Würfel schaffen.
+Inspiriert von diesem Szenario, programmierte ich diesen Würfel, der nach anklicken eine zufällige Zahl von 1 bis 6 ausgibt und nach jedem Wurf eine neue, zufällig generierte Farbe anzeigt.
+Sehr Erfolg versprechend wird es, wenn man anstatt auf den Würfel zu klicken die Eingabetaste drückt.

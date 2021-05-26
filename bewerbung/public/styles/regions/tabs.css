@@ -1,0 +1,84 @@
+section#registerkarten div > div.title {
+	margin-bottom: 3rem;
+}
+
+.about {
+	background: var(--clr-white);
+	border-radius: var(--radius);
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+article.about .btn-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0 !important;
+}
+
+.tab-btn {
+	border-radius: 0;
+	padding: 1rem 0;
+	margin: 0;
+	border: none;
+	text-transform: capitalize;
+	display: block;
+	background: var(--light) !important;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.tab-btn:hover:not(.active) {
+	background: var(--myred) !important;
+	color: var(--textcolor);
+}
+.about-content {
+	border-bottom-left-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
+	padding: 2rem;
+	background: var(--primary);
+}
+
+div.about-img {
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+	height: 20rem;
+	background: url('https://source.unsplash.com/800x600/?nature') no-repeat
+		center/cover;
+	/* margin-bottom: 1rem; */
+}
+
+.content {
+	display: none;
+}
+.tab-btn.active {
+	background: var(--primary) !important;
+}
+.content.active {
+	display: block;
+}
+
+@media screen and (min-width: 992px) {
+	.about-img {
+		margin-bottom: 0;
+		border-radius: var(--radius);
+	}
+
+	.about-center {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+	}
+
+	.btn-container {
+		border-top-left-radius: var(--radius);
+		border-top-right-radius: var(--radius);
+	}
+
+	.tab-btn:nth-child(1) {
+		border-top-left-radius: var(--radius);
+	}
+
+	.tab-btn:nth-child(3) {
+		border-top-right-radius: var(--radius);
+	}
+}

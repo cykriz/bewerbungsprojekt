@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="#" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+			integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+			crossorigin="anonymous"
+		></script>
+		<script src="app.js" type="module" defer></script>
+		<title>Auslastung der Intensivbetten seit 15.11.2020</title>
+	</head>
+	<body>
+		<h1>Auslastung der Intensivbetten seit 15.11.2020</h1>
+		<p>
+			Quelle:
+			<a href="https://www.intensivregister.de/" target="_blank"
+				>https://www.intensivregister.de/</a
+			>
+		</p>
+		<div style="height: 500px; width: 100%">
+			<canvas id="intensiv-line" width="400" height="100"></canvas>
+			<h2>Intensivbettenverteilung, Stand: <span id="datum"></span></h2>
+			<canvas id="intensiv-pie" width="400" height="200"></canvas>
+		</div>
+	</body>
+</html>

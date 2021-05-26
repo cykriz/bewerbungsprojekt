@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="js/app.js" type="module"></script>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=1"
+		/>
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<title>Bewerbung auf einen Praktikumsplatz</title>
+	</head>
+	<body>
+		<div id="backdrop"></div>
+		<div id="impressum">
+			<div class="back-content"></div>
+			<button class="close-backdrop">Schließen</button>
+		</div>
+		<div id="blog">
+			<iframe src="https://demo-blog.cykriz.de"></iframe>
+			<button class="close-backdrop">Schließen</button>
+		</div>
+		<div id="corona">
+			<iframe src="https://heim.cykriz.de/corona"></iframe>
+			<button class="close-backdrop">Schließen</button>
+		</div>
+		<div id="datenschutz">
+			<div class="back-content"></div>
+			<button class="close-backdrop">Schließen</button>
+		</div>
+		<header id="header">
+			<h1>Bewerbung auf einen<br />Praktikumsplatz</h1>
+			<p>
+				Simon&nbsp;Christoph&nbsp;| Felix-Jud-Ring&nbsp;24&nbsp;|
+				21035&nbsp;Hamburg
+			</p>
+			<div class="scroll-down-container">
+				<div class="chevron"></div>
+				<div class="chevron"></div>
+				<div class="chevron"></div>
+			</div>
+		</header>
+		<main>
+			<section>
+				<div class="wrapper columns" id="about"></div>
+				<div class="wrapper columns" id="site"></div>
+			</section>
+			<section id="boxes">
+				<div class="wrapper" style="padding-bottom: 0">
+					<p>
+						Es bereitet mir viel Freude Neues zu erlernen. Bis jetzt lag der
+						Schwerpunkt meines Studiums auf folgenden Technologien:
+					</p>
+				</div>
+				<div class="wrapper">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</section>
+			<section>
+				<div class="wrapper column">
+					<h2 class="text-center">Blog in PHP</h2>
+					<span class="line"></span>
+					<p class="text-center">
+						Diesen Blog habe ich in PHP erstellt. Die Daten werden von einer
+						MariaDB abgerufen und im Dashboard kann man sich einloggen und
+						Einträge verändern.
+					</p>
+					<div class="wd50">
+						<button id="blog-btn">Blog anzeigen!</button>
+					</div>
+				</div>
+			</section>
+			<section id="chat-section">
+				<div class="wrapper column" style="padding-bottom: 0; margin-bottom: 0">
+					<h2 class="text-center">Chat</h2>
+					<span class="line"></span>
+					<p class="text-center">
+						Diesen Chat habe ich mit Hilfe von socket.io und Node.js
+						erstellt.<br />Es werden zwei Chat-Fenster angezeigt, um die
+						Funktionalität nachzuvollziehen.
+					</p>
+				</div>
+				<div class="chat-windows">
+					<iframe src="chat.html"></iframe>
+					<iframe src="chat.html"></iframe>
+				</div>
+			</section>
+			<section id="corona-section">
+				<div class="wrapper column">
+					<h2 class="text-center">Coronadaten</h2>
+					<span class="line"></span>
+					<p class="text-center">
+						Die folgende App ruft täglich die aktuelle Auslastung der
+						Intensivstationen ab und speichert die Daten in eine eigene
+						Datenbank. Beim Öffnen der App werden dann alle in der Datenbank
+						gespeicherten Informationen abgerufen und durch ein Diagramm
+						grafisch dargestellt.
+					</p>
+					<div class="wd50">
+						<button id="corona-btn">Coronadaten anzeigen!</button>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="wrapper column">
+					<h2 style="text-align: center">Speisekarte</h2>
+					<p class="text-center">
+						Diese Demo-Speisekarte wurde im Grid-Layout gestaltet und kann mit
+						Hilfe von JavaScript gefiltert werden.
+					</p>
+					<span class="line"></span>
+					<div class="btn-container" id="menu-btn-container"></div>
+					<div class="menu-center"></div>
+				</div>
+			</section>
+			<section>
+				<div class="wrapper">
+					<div class="wd70" id="wuerfel-text"></div>
+					<div class="wd30" id="die">
+						<div class="die">
+							<p>Start</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="registerkarten">
+				<div class="wrapper column">
+					<div class="title"></div>
+					<div class="about-center section-center">
+						<div class="about-img"></div>
+						<article class="about">
+							<div class="btn-container">
+								<button class="tab-btn active" data-id="history">
+									Geschichte
+								</button>
+								<button class="tab-btn" data-id="vision">Vision</button>
+								<button class="tab-btn" data-id="ziele">Ziele</button>
+							</div>
+							<div class="about-content">
+								<div class="content active" id="history"></div>
+								<div class="content" id="vision"></div>
+								<div class="content" id="ziele"></div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section id="blindtext">
+				<div class="wrapper">
+					<div class="wd50 columns">
+						<h3>Keine Lust mehr auf Lorem ipsum?</h3>
+						<form class="lorem-form">
+							<label for="amount">Absätze:</label>
+							<input
+								type="number"
+								id="amount"
+								placeholder="1"
+								max="9"
+								min="0"
+								value="1"
+							/>
+							<button type="submit" class="btn">Generieren</button>
+						</form>
+						<div class="lorem-text"></div>
+					</div>
+					<div class="flex"></div>
+				</div>
+			</section>
+			<section id="bewertungen">
+				<div class="wrapper">
+					<div class="flex"></div>
+					<div class="wd50">
+						<article class="review">
+							<div class="image-container">
+								<img src="#" alt="" id="person-img" />
+								<h3 id="author">Peter Müller</h3>
+								<p id="job">UX-Design</p>
+								<span class="line"></span>
+								<p id="info">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+									quo, corrupti odio animi impedit soluta fugit facilis
+									voluptatem. Illo, ducimus!
+								</p>
+								<div class="buttons-container">
+									<button class="prev-btn">
+										<i class="fas fa-chevron-left"></i>
+									</button>
+									<button class="random-btn">Zufällige Bewertung</button>
+									<button class="next-btn">
+										<i class="fas fa-chevron-right"></i>
+									</button>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="#" id="impressum-link">Impressum</a></li>
+				<li><a href="#" id="datenschutz-link">Datenschutz</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,2 @@
+Node.js
+Als Laufzeitumgebung, die außerhalb des Browsers verwendet wird, ist Node.js eines der beliebtesten JavaScript-Tools geworden. Da Node.js in JavaScript geschrieben ist und auf Googles V8 Engine basiert, kann der Code sehr schnell ausgeführt werden.

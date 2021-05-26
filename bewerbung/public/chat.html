@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<script src="./js/regions/socket.js" type="module" defer></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/regions/chat.css" />
+		<style>
+			body {
+				/* display: flex; */
+				height: 100vh;
+				background: none transparent;
+			}
+		</style>
+		<title>Chat cykriz.de</title>
+	</head>
+	<body>
+		<!-- <section id="chat-intern"> -->
+		<div id="chat">
+			<div id="name-box">
+				<div id="enter-name">
+					<p>Zum Chatten Name eingeben:</p>
+					<div id="name-eingeben">
+						<input type="text" name="handle" id="handle" placeholder="Name" />
+						<button id="start-chat">Zum Chat</button>
+					</div>
+				</div>
+			</div>
+			<div id="chat-box" class="hide">
+				<div id="chat-output"></div>
+				<div id="feedback" class="hide"></div>
+				<div class="control">
+					<input type="text" id="message" placeholder="Nachricht" autofocus />
+					<button id="sendBtn">Send</button>
+				</div>
+			</div>
+		</div>
+		<!-- </section> -->
+	</body>
+</html>

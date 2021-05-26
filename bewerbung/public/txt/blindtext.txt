@@ -1,0 +1,5 @@
+Blindtextgenerator
+Diese Seite ist voll mit Blindtext. Denn ich möchte keine Botschaft in Form von Text vermitteln, sondern Programmierungsfähigkeiten vorzeigen.
+Der Klassiker unter den Blindtexten ist "Lorem ipsum". Der Text soll nichts bedeuten, sonder ein Vorgeschmack darauf geben, wie das Design später mit fertigem Text aussehen soll.
+
+Doch irgendwann kann es langweilig werden immerzu "Lorem ipsum" zu verwenden. Deshalb habe ich ein kleines Programm gesschrieben, das verschiedene Blindtexte in einer ausgewählten Anzahl an Absätzen ausgibt. Als Vorlage diente mir blindtextgenerator.de.

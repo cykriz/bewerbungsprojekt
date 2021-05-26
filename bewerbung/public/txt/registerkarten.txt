@@ -1,0 +1,3 @@
+Registerkarten
+Auch sie sind sehr beliebt und auf vielen Website anzutreffen. Der Inhalt der Seite wird dynamisch geändert und angezeigt.
+Ach hier in meinem Beispiel werden die Texte über AJAX vom Dateisystem des Servers geladen.

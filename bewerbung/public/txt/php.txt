@@ -1,0 +1,2 @@
+PHP 
+Laut W3Techs nutzen im März 2021 fast 79% der Website-Server PHP. Das liegt nicht nur an der großen Anzahl an Webseiten, die mit WordPress, etc. laufen. Auch unzählige Unternehmen setzen für den serverseitigen Code auf PHP. Dies macht macht ein fundamentiertes Wissen über PHP unverzichtbar. 
