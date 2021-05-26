@@ -59,11 +59,11 @@ class Container
       },
       'pdo' => function () {
           try {
-              $host = '';
-              $port = '';
-              $database = '';
-              $user = '';
-              $password = '';
+              $host = $_ENV['DB_HOST'] ?? null;
+              $port =  $_ENV['DB_PORT'] ?? null;
+              $database = $_ENV['DB_DATABASE'] ?? null;
+              $user = $_ENV['DB_USER'] ?? null;
+              $password = $_ENV['DB_PASSWORD'] ?? null;
             
               $pdo = new PDO(
                   "mysql:host=$host:$port;dbname=$database;charset=utf8",
