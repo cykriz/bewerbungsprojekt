@@ -61,7 +61,7 @@ class Container
           try {
               $host = $_ENV['DB_HOST'] ?? null;
               $port =  $_ENV['DB_PORT'] ?? null;
-              $database = $_ENV['DB_DATABASE'] ?? null;
+              $database = $_ENV['DB_DATABASE_DEMO_BLOG'] ?? null;
               $user = $_ENV['DB_USER'] ?? null;
               $password = $_ENV['DB_PASSWORD'] ?? null;
             
