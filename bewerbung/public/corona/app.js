@@ -1,7 +1,7 @@
 import 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js';
 
 const fetchingData = async () => {
-	const response = await fetch('https://heim.cykriz.de/corona-data');
+	const response = await fetch('/corona-data');
 	const json = await response.json();
 	return json;
 };
@@ -163,3 +163,5 @@ fetchingData().then(fetchedArray => {
 		},
 	});
 });
+
+sessionStorage.removeItem('isNotFirstTime');

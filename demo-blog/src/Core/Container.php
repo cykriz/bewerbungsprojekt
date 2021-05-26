@@ -59,12 +59,13 @@ class Container
       },
       'pdo' => function () {
           try {
-              $host = $_ENV['DB_HOST'] ?? null;
-              $port =  $_ENV['DB_PORT'] ?? null;
-              $database = $_ENV['DB_DATABASE_DEMO_BLOG'] ?? null;
-              $user = $_ENV['DB_USER'] ?? null;
-              $password = $_ENV['DB_PASSWORD'] ?? null;
-            
+              (new DotEnv(__DIR__ . '/../../../.env'))->load();
+              $host = getenv('DB_HOST') ?? null;
+              $port =  getenv('DB_PORT') ?? null;
+              $database = getenv('DB_DATABASE_DEMO_BLOG') ?? null;
+              $user = getenv('DB_USER') ?? null;
+              $password = getenv('DB_PASSWORD') ?? null;
+
               $pdo = new PDO(
                   "mysql:host=$host:$port;dbname=$database;charset=utf8",
                   $user,

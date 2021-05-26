@@ -32,7 +32,11 @@ blogBtn.addEventListener('click', event => {
 
 coronaBtn.addEventListener('click', event => {
 	event.preventDefault;
+	const iframe = document.createElement('iframe');
+	iframe.src = 'https://heim.cykriz.de/corona';
+	corona.insertAdjacentElement('afterbegin', iframe);
 	toggle(corona);
+	return iframe;
 });
 
 blog.addEventListener('click', () => {
@@ -49,4 +53,6 @@ datenschutz.addEventListener('click', () => {
 
 corona.addEventListener('click', () => {
 	toggle(corona);
+	const iframe = corona.querySelector('iframe');
+	iframe.remove();
 });

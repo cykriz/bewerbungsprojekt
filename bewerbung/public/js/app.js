@@ -1,4 +1,3 @@
-// import './regions/socket.js';
 import './regions/die.js';
 import './regions/reviews.js';
 import './regions/tabs.js';
