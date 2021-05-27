@@ -33,7 +33,7 @@ blogBtn.addEventListener('click', event => {
 coronaBtn.addEventListener('click', event => {
 	event.preventDefault;
 	const iframe = document.createElement('iframe');
-	iframe.src = 'https://heim.cykriz.de/corona';
+	iframe.src = 'https://' + window.location.host + '/corona';
 	corona.insertAdjacentElement('afterbegin', iframe);
 	toggle(corona);
 	return iframe;
