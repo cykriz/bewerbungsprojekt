@@ -15,16 +15,6 @@ for ($i=0; $i < $urilen; $i++) {
     }
 }
 
-// echo $pathInfo;
-// die();
-
-// if (is_null($pathInfo)) {
-//     $pathInfo = '/index';
-// }
-
-// echo '<br><br><br><br><br><br><br><br>';
-// var_dump($pathInfo);
-
 $routes = [
   "/" => [
     "controller" => "postsController",
