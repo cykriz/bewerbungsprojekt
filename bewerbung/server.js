@@ -1,6 +1,5 @@
 const express = require('express');
 const socket = require('socket.io');
-const fetch = require('node-fetch');
 const Datastore = require('nedb');
 
 const app = express();
@@ -16,8 +15,6 @@ const server = app.listen(port, () => {
 app.use(express.static('public'));
 
 app.get('/corona-data', (req, res) => {
-	// app.use(express.static('public/corona'));
-
 	const data = database.getAllData();
 	res.send(data);
 });

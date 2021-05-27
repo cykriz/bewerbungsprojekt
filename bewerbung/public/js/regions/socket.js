@@ -10,7 +10,7 @@ const nameBox = document.getElementById('name-box'),
 	feedback = document.getElementById('feedback'),
 	body = document.querySelector('body');
 
-const socket = io.connect('localhost:8080');
+const socket = io.connect(window.location.host);
 
 socket.on('chat', data => {
 	const { message, handle, id } = data;

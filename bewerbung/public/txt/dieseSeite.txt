@@ -2,7 +2,7 @@
 Diese Website habe ich erstellt, um meinen aktuellen Wissensstand, sowie meine Bereitschaft zum eigenverantwortlichen Lernen und zur Anwendung des Gelernten zu demonstrieren. Alle auf dieser Seite vorgeführten Funktionen wurden von mir Zeile für Zeile selbst erstellt.
 
 Die Seite lauft auf einem virtuellen Server, auf dem ich unter anderem folgende Dienste eingerichtet habe: <ul><li>NGINX</li><li>MariaDB</li><li>Node.js</li><li>PHP</li></ul>
-Der serverseitige Code dieser Seite wurde in Node.js erstellt, der Blog wurde ausschließlich in PHP erstellt.
+Der serverseitige Code dieser Seite wurde in Node.js erstellt, der Blog wurde ausschließlich in PHP erstellt. Zur Gestalltung verwende ich im Blog außerdem auch einige Bootstrap-Elemente.
 
 Erfahrungen konnte ich in JavaScript bereits mit verschiedenen Technologien machen. Unter anderem mit asynchronem/synchronem Code, callbacks, promises, async/await, HTTP-requests, etc.
 
