@@ -160,6 +160,10 @@ h2 + input {
 	margin-bottom: 1rem;
 }
 
+p#test-user {
+	margin-bottom: 5rem;
+}
+
 textarea {
 	width: 100%;
 }

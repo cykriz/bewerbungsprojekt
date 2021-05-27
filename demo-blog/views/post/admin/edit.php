@@ -19,15 +19,20 @@
 
 
 <?php if (!empty($savedSuccess)): ?>
-<p class="clearfix">Eintrag erfolgreich geändert. Folgende Informationen wären jetzt in der Datenbank gespeichert
-  worden:
-</p>
+<p class="clearfix">Änderung erfolgreich registriert.<br>Folgende Informationen wären jetzt in der Datenbank gespeichert
+  worden:</p>
 <div style="border: 1px solid var(--myred); padding: 1rem">
+
+  <?php if (empty($entry->deleted)) { ?>
   <h3><?= e($entry->newTitle); ?>
   </h3>
   <p><?= nl2br(e($entry->newContent)); ?>
   </p>
+  <?php } else { ?>
+  <p>Alle Inhalte des Eintrags wurden gelöscht.</p>
+  <?php } ?>
 </div>
+
 <?php endif ?>
 
 <?php

@@ -31,13 +31,26 @@ class PostsAdminController extends AbstractController
 
         $savedSuccess = false;
 
-        if (!empty($_POST['content']) and !empty($_POST['title'])) {
+        if (!empty($_POST['content']) || !empty($_POST['title'])) {
             // So würde der neue Beitrag in er DB gespeichert werden:
             // $entry->content = $_POST['content'];
             // $entry->title = $_POST['title'];
             // $this->postsRepository->update($entry);
-            $entry->newTitle = $_POST['title'];
-            $entry->newContent = $_POST['content'];
+            if ($_POST['content'] === '') {
+                $entry->newContent = 'Inhalt wurde gelöscht.';
+                $entry->newTitle = $_POST['title'];
+            } elseif ($_POST['title'] === '') {
+                $entry->newTitle = 'Titel wurde gelöscht.';
+                $entry->newContent = $_POST['content'];
+            } else {
+                $entry->newTitle = $_POST['title'];
+                $entry->newContent = $_POST['content'];
+            }
+            $savedSuccess = true;
+        } elseif ($_POST['content'] === '' && $_POST['title'] === '') {
+            $entry->newTitle = 'Leer';
+            $entry->newContent = 'Leer';
+            $entry->deleted = true;
             $savedSuccess = true;
         }
 
