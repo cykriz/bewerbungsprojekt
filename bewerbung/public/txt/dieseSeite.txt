@@ -2,10 +2,15 @@
 Diese Website habe ich erstellt, um meinen aktuellen Wissensstand, sowie meine Bereitschaft zum eigenverantwortlichen Lernen und zur Anwendung des Gelernten zu demonstrieren. Alle auf dieser Seite vorgeführten Funktionen wurden von mir Zeile für Zeile selbst erstellt.
 
 Die Seite lauft auf einem virtuellen Server, auf dem ich unter anderem folgende Dienste eingerichtet habe: <ul><li>NGINX</li><li>MariaDB</li><li>Node.js</li><li>PHP</li></ul>
+
 Der serverseitige Code dieser Seite wurde in Node.js erstellt, der Blog wurde ausschließlich in PHP erstellt. Zur Gestalltung verwende ich im Blog außerdem auch einige Bootstrap-Elemente.
+
+Großes Interesse habe ich auch für Frontend Technologien wie React, Vue oder Angular.
 
 Erfahrungen konnte ich in JavaScript bereits mit verschiedenen Technologien machen. Unter anderem mit asynchronem/synchronem Code, callbacks, promises, async/await, HTTP-requests, etc.
 
-Die meisten Texte dieser Seite werden mit <b>AJAX</b> aus dem Dateisystem des Servers geladen.
+Die meisten Texte dieser Seite werden mit AJAX aus dem Dateisystem des Servers geladen.
+
+Der Code dieses Projektes kann auf GitHub eingesehen werden.<br><a id="github-link" href="https://github.com/cykriz/bewerbungsprojekt" target="_blank">Zum Code auf GitHub</a>
 
 Es folgen nun die Coding-Beispiele.

@@ -16,6 +16,10 @@ const appendText = (htmlElementsArray, selector) => {
 	}
 };
 
+text.settingUpText('../txt/dieseSeite', 'h3').then(htmlElementsArray => {
+	appendText(htmlElementsArray, 'div#site');
+});
+
 text.settingUpText('../txt/javaScript', 'h2').then(htmlElementsArray => {
 	appendText(htmlElementsArray, 'section#boxes div.wrapper div:nth-of-type(1)');
 });
@@ -30,10 +34,6 @@ text.settingUpText('../txt/php', 'h2').then(htmlElementsArray => {
 
 text.settingUpText('../txt/ueber', 'h2').then(htmlElementsArray => {
 	appendText(htmlElementsArray, 'div#about');
-});
-
-text.settingUpText('../txt/dieseSeite', 'h3').then(htmlElementsArray => {
-	appendText(htmlElementsArray, 'div#site');
 });
 
 text.settingUpText('../txt/wuerfel').then(htmlElementsArray => {

@@ -12,8 +12,8 @@
 @import 'regions/menu.css';
 @import 'regions/backdrop.css';
 @import 'regions/outer-chat.css';
-@import 'regions/media.css';
 @import 'regions/footer.css';
+@import 'regions/media.css';
 
 * {
 	box-sizing: border-box;
@@ -55,13 +55,20 @@ a {
 }
 
 button,
-input {
+input,
+a#github-link {
 	background: var(--myred);
 	border: none;
 	padding: 1rem;
 	color: var(--textcolor);
 	border-radius: 1rem;
 	margin: 0.5rem 1rem;
+}
+
+a#github-link {
+	text-decoration: none;
+	color: #fff;
+	/* margin: auto; */
 }
 
 button:hover {

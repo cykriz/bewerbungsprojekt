@@ -1,4 +1,6 @@
+.env
 bewerbung/node_modules
 bewerbung/database.db
-.env
-@eaDir
+bewerbung/nohup.out
+**/@eaDir
+**/.DS_Store
