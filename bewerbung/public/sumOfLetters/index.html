@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="workingWithDom.js" type="module"></script>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<style>
+			span {
+				display: inline-block;
+				width: 37rem;
+			}
+			span[id] {
+				width: max-content;
+			}
+			input[type='text'] {
+				background: var(--light);
+			}
+			input {
+				font-size: 1em;
+			}
+		</style>
+		<title>Your name as a number</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="wrapper column">
+					<h1>Your name as a number</h1>
+					<p style="font-style: italic">
+						If every letter in English alphabet has a number from 1 to 26, what
+						would be the sum of all letters in your name?
+					</p>
+					<p>
+						My Name: Simon.<br />
+						<span>The correct sum of all letters in my name is: </span>70<br />
+						<span>The output of my app is: </span
+						><span id="sum-of-my-name"></span>
+					</p>
+					<h2>Unit-Tests:</h2>
+					<p>
+						<span>The correct number of "A" is: </span>1<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-a"></span>
+					</p>
+					<p>
+						<span>The correct number of "Z" is: </span>26<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-z"></span>
+					</p>
+					<p>
+						<span>The correct sum of "Az" is: </span>27<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-az"></span>
+					</p>
+					<p>
+						<span>The correct sum of "Test" is: </span>64<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-testString"></span>
+					</p>
+					<p>
+						<span>The correct sum of "Te st" is: </span>64<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-te_st"></span>
+					</p>
+					<p>
+						<span>The correct sum of "Ivan" is: </span>46<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-ivan"></span>
+					</p>
+					<h3>Testing non English characters are skipped</h3>
+					<p>
+						<span>The correct sum of "üöä€çßß" is: </span>0<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-nonEng1"></span>
+					</p>
+					<p>
+						<span>The correct sum of "Möbel" is: </span>32<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-nonEng2"></span>
+					</p>
+					<h3>Testing case sensitivity</h3>
+					<p>
+						<span>The correct sum of "AAA" is: </span>3<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-caseSens1"></span>
+					</p>
+					<p>
+						<span>The correct sum of "AaaA" is: </span>4<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-caseSens2"></span>
+					</p>
+					<h3>Testing spaces are skipped</h3>
+					<p>
+						<span>The correct sum of "te st" is: </span>64<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-spaceSkip1"></span>
+					</p>
+					<p>
+						<span>The correct sum of "t e s t" is: </span>64<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-spaceSkip2"></span>
+					</p>
+					<h3>Testing non string elements</h3>
+					<p>
+						<span>The correct sum of an objekt is: </span>0<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-nonStr1"></span>
+					</p>
+					<p>
+						<span>The correct sum of a float is: </span>0<br />
+						<span>The output of my app is correct: </span
+						><span id="sum-of-nonStr2"></span>
+					</p>
+					<h2>User input:</h2>
+					<input type="text" name="name" id="input" />
+					<input type="button" value="Show result" id="showSumBtn" />
+					<p id="result"></p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
