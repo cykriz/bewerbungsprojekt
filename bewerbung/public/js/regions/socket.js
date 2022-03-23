@@ -10,6 +10,10 @@ const nameBox = document.getElementById('name-box'),
 	feedback = document.getElementById('feedback'),
 	body = document.querySelector('body');
 
+	if (location !== parent.location) {
+		document.querySelector('body').style.background = 'none transparent'
+	}
+
 const socket = io.connect(window.location.host);
 
 socket.on('chat', data => {
