@@ -19,6 +19,10 @@ app.get('/corona-data', (req, res) => {
 	res.send(data);
 });
 
+app.get('*', (req, res) => {
+	res.redirect('404.html');
+});
+
 const io = socket(server);
 
 io.on('connection', socket => {
